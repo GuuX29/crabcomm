@@ -1,0 +1,12 @@
+# pip install -r requirements.txt
+
+# Base ----------------------------------------
+opencv-python
+numpy
+Pillow
+lxml
+rich
+matplotlib
+seaborn
+scikit-learn
+tqdm
