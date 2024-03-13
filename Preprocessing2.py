@@ -902,13 +902,10 @@ import uuid
 import imgviz
 import labelme
 import os.path as osp
+import pycocotools.mask
 
-try:
-    import pycocotools.mask
-except ImportError:
-    print("Please install pycocotools:\n\n    pip install pycocotools\n")
-    sys.exit(1)
-
+# Revised and organized from https://github.com/labelmeai/labelme/blob/12d425b956878132566d243b4d9f6f3af33ec810/examples/bbox_detection/labelme2voc.py#L70.
+# Wada, K. Labelme: Image Polygonal Annotation with Python [Computer software]. https://doi.org/10.5281/zenodo.5711226
 class LabelmeToJSON:
     def __init__(self, input_dir, output_dir, labels_file, noviz=False):
         self.input_dir = input_dir
@@ -1087,7 +1084,7 @@ class LabelmeToJSON:
         with open(osp.join(self.output_dir, "annotations.json"), "w") as f:
             json.dump(data, f)
 
-
+# Revised and organized from https://doi.org/10.5281/zenodo.2738323 and https://github.com/ultralytics/JSON2YOLO .
 class SegJSON:
     def __init__(self, json_dir='../coco/annotations/', save_dir='segdata/', use_segments=True, split_ratio=0.8):
         self.json_dir = json_dir

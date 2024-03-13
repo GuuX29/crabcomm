@@ -294,6 +294,9 @@ converter.convert_all()
 
 #### 16. **LabelmeToJSON**
 
+#### Revised and organized from https://github.com/labelmeai/labelme/blob/12d425b956878132566d243b4d9f6f3af33ec810/examples/bbox_detection/labelme2voc.py#L70.
+#### Wada, K. Labelme: Image Polygonal Annotation with Python [Computer software]. https://doi.org/10.5281/zenodo.5711226
+
 **Function Description:**
 
 The `LabelmeToJSON` class provides functionality to convert Labelme annotations to a COCO JSON format. It reads Labelme annotations from a specified input directory, processes the data, and generates a COCO JSON file in the output directory. The class also handles the conversion of image data, annotations, and categories.
@@ -313,6 +316,8 @@ labelme_converter.convert()
 ---
 
 #### 17. **SegJSON**
+
+#### Revised and organized from https://doi.org/10.5281/zenodo.2738323 and https://github.com/ultralytics/JSON2YOLO .
 
 **Function Description:**
 
