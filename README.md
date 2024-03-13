@@ -4,7 +4,7 @@ This repository provides essential dataset preprocessing tools for YOLO object d
 ## 'Crabcomm' package
 Author:Xuan Gu, Date: 2024/2/26
 ### Main Functions Explained
-
+First, all files should be stored in one folder, for example `crabcomm`. Next, you can use `from crabcomm.Preprocessing2 import *` to activate these functions.
 #### 1. **crop_images**
 
 **Function Description**: This function is designed to crop multiple smaller images from original images in a specified directory. It does so by applying a sliding window technique over the original images. The size of the cropped images, the step size of the sliding window, and whether to keep the original image names can be specified.
